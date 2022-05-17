@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body{
+     font-family:  'Roboto', sans-serif;
+     line-height: 1.8 !important;
+     margin: 0;
+     padding: 0;
+ }
+ h1,h2,h3,h4,h5,h6{
+     font-weight: 800 !important;
+ }
+
+ img{
+  width: 100%;
+ }
+
+ #hero{
+     padding-top:170px;
+     padding-bottom: 170px;
+ }
+
+
+/* nav bar*/
+.navbar{
+     position:absolute;
+     width:100%;
+}
+.navbar-brand{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family:'Neonderthaw', cursive;
+}
+.navbar .navbar-nav .nav-link{
+    text-transform: uppercase;
+}
+
+ /* hero */
+ 
+ #hero{
+    background: url(img/aleksandra-glabchuk-pizza-render.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ .logo-png{
+     width:20% ;
+     height: auto;
+ }
+
+
+.shape2{
+    width: 2%;
+    height: auto;
+    animation-name: move 3s linear infinite;
+}
+@keyframes move{
+    0% { position:relative;left: 0px; top: 0px; }
+    15% { position: relative;left: 150px; top: 50px; }
+    25% { position: relative; left:0px; top: 150px;}
+    50%{ position: relative; left: 0px; top: -50px;}
+}
+
+@media (min-width: 538px){
+    .shape2{
+        width: 2%;
+        height: auto;
+        animation-name: move;
+        animation-duration: 10s;
+    }
+    @keyframes move{
+        0% { position:relative;left: 0px; top: 0px; }
+        25% { position: relative;left: 150px; top: 50px; }
+        50% { position: relative; left:0px; top: 150px;}
+        100%{ position: relative; left: 0px; top: -50px;}
+    }
+        
+} 
+
+ .shape{
+     width: 10%;
+     height: auto;
+     margin-left: -9em;
+     margin-top: -5em;
+     position: absolute;
+  }
+
+ .menu-icon{
+   position: absolute;
+   right: 0;
+   margin-top: -50em;
+   display: inline-block;
+   width: 40px;
+   height:40px;
+   background: linear-gradient(30deg, #ff8200 20%, #ff2600 80%);
+   text-align: center;
+   position: fixed;
+ }
+ 
+ @media (max-width:992px){
+     .menu-icon{
+         margin-top: -60em !important;
+     }
+ }
+ .menu-content{
+   display: none;
+   color: black;
+   margin-top: -4em;
+   margin-left: -10em;
+   background-color: #fff;
+   min-width: 160px;
+   box-shadow: 0px 8x 16px 0px rgba(0, 0, 0, 0.2);
+   padding: 12px 16px;
+ }
+ 
+ .menu-icon:hover .menu-content{
+     display: block;
+ }
+ 
+ .menu-bar{
+    background: linear-gradient(30deg, #ff8200 20%, #ff2600 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff !important;
+    text-decoration: none;
+ }
+
+ .menu-bar-content{
+     text-decoration: none;
+     color: #000;
+ }
+ .menu-bar-content:hover{
+     color:#ff2600 ;
+ }
+
+.btn-color{
+    background: linear-gradient(30deg, #ff8200 20%, #ff2600 80%);
+    border-radius: 5em !important;
+}
+
+.btn-color2{ 
+    background-color: #fff;
+    color: #ff2600 !important ;
+    border-radius: 5em !important;
+}
+.btn-color2:hover{
+    background:linear-gradient(30deg, #ff8200 20%, #ff2600 80%);
+    border:solid 1px #fff;
+    color: #fff !important;
+}
+
+ @media (max-width:538px){
+    .logo-png{
+        width:50% !important;
+        height: auto;
+        margin-bottom: 5em;
+    }
+    .shape{
+        margin: 0 -4em;
+        position: absolute;
+        bottom: 12em;
+        width: 7rem;
+    }   
+ }
+
+
+ /* About */
+
+ #About{
+     margin-top: 0.5em;
+     font-family:'Lato', sans-serif;
+ }
+
+ .text{
+     font-size: 25px;
+     color:#000000 !important;
+ }
+
+ .box {
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+    border-radius: 1.5rem !important;
+    padding: 30px;
+    margin: 30px;
+    transition: all ease-out 2s;
+}
+
+.box:hover {
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+    transform: rotate(360deg);
+}
+
+.svg{
+   margin-left: -3em;
+}
+ @media (max-width:992px){
+   .svg{
+    margin-left: -3.8em;
+ }
+}
+ /* service */
+
+ #service{
+     color: #fff;
+     margin-top: 1em;
+     padding: 8em;
+     background: url(img/aleksandra-glabchuk-pizza-render.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-position: center;
+
+ }
+ .w-70{
+     width: 22em;
+ }
+
+ .boton{
+     border-radius: 2em 0 2em 2em !important;
+     width: 10em;
+     height: 6em;
+     border:solid 1px #fff !important;
+     margin-top: 3em;
+     transition: all ease-in 2s;
+     font-size: 1,6em !important;
+ }
+ .boton1{
+    border-radius: 2em 0 2em 2em !important;
+    width: 10em;
+    height: 6em;
+    border:solid 1px #fff !important;
+    margin-left: 4em;
+    margin-top: 3em;
+ }
+ @media (max-width:992px){
+    .boton1{
+    margin-left: 0;
+
+    }
+ }   
+ .move{
+     margin-top: 6em !important;
+ }
+
+  
+/*features*/
+
+#features{
+    background: url(img/fea-img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-top: 5em;
+}
+
+/* share-pizza*/
+ #share-pizza{
+     margin-top: 8em;
+     text-align: center;
+ }
+ 
+ .pizza-color{
+     color: #ff2600;
+ }
+
+ .boxx{
+    width: 3em;
+    height: 3em;
+    transition: all ease-out 2s;
+    background-color: #ff2600 ;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+ }
+ .boxx:hover {
+    transform: rotate(360deg);
+    background-color: #fff;
+    border: solid 2px #ff2600;
+}
+ 
+
+/* video-section*/
+
+#video-section{
+    text-align: center;
+}
+
+.adjust{
+    margin-top: 10em !important;
+}
+
+.botton{
+    width: 15em;
+    height: 2.7em;
+    border-radius: 2em !important;
+    background-color:  #ff2600 !important;
+    color: #fff !important;
+}
+
+.play-btn {
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 80px;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 7em;
+    text-align: center;
+    box-shadow: 0 0 0 0 hsl(182deg 74% 86% / 70%);
+    background: linear-gradient(
+30deg
+, #ff8200 20%, #ff2600 80%);
+    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulse;
+}
+
+@media (max-width:992px){
+.play-btn{
+    margin-top: 3em !important;
+ }
+}
+
+.positionn{
+    margin-top: -1em;
+}
+
+
+.background{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+/*pricing*/
+
+#pricing{
+    text-align: center;
+    margin-top:5em;
+}
+
+.pricing-box{
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+    padding: 30px;
+    margin: 30px;
+    margin-top: -1.9em;
+}
+.pricing-box-color{
+    background-color: #ff2600 ;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.botton1{
+    width: 15em;
+    height: 2.7em;
+    border-radius: 2em !important;
+    background-color:  #ff2600 !important;
+    color: #fff !important;
+}
+
+@media (min-width:992px){
+    .botton1{
+        width: 9em;
+        height: auto;
+    }
+}
+@media (min-width:790px){
+    .botton1{
+        width: 8em;
+        height: auto;
+        margin-left: -1em;
+    }
+}
+
+/* pizza-news */
+ 
+#pizza-news{
+    margin-top: 5em;
+}
+
+.pizza-news-box{
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+    width: 22.4em;
+    height: 10em;
+}
+
+@media (max-width:790px){
+    .pizza-news-box{
+        box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+        width: 29.7em;
+        height: 10em;
+    }
+}
+
+.a{
+    text-decoration: none;
+    color: #000;
+}
+
+.a:hover{
+    color:  #ff2600;
+}
+
+/*contact*/
+
+#contact{
+    margin-top: 7em;
+    background: linear-gradient(#ff8200 20%, #ff2600 80%);
+    background-size: cover;
+}
+
+
+form .form-control{
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    border-color:rgb(255, 255, 255, 0.5) ;
+}
+
+form .form-control:focus{
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+}
+
+
+form input .form-control{
+    height: 54px;
+}
+
+form .form-control::placeholder{
+    color: #fff;
+}
+
+.bottonn{
+    margin: 1em;
+    padding: 25em;
+    min-width: 5em;
+    border:solid 2px #fff !important;    
+    color:#fff !important;
+}
+
+/*footer */
+footer{
+    background: linear-gradient(to right, #fff, #fff);
+    color:  #ff2600;
+}
